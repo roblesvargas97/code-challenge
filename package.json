@@ -1,0 +1,18 @@
+{
+  "name": "code-challenge-launchx",
+  "version": "1.0.0",
+  "description": "Code challengen week 4 for LaunchX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "code-challenge",
+    "javascript",
+    "node",
+    "jest",
+    "tdd"
+  ],
+  "author": "Jesus Uriel Robles Vargas",
+  "license": "MIT"
+}
