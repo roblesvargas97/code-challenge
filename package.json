@@ -16,6 +16,8 @@
   "author": "Jesus Uriel Robles Vargas",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.14.0"
+    "@types/jest": "^27.4.1",
+    "eslint": "^8.14.0",
+    "jest": "^26.0.0"
   }
 }
