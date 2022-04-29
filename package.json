@@ -14,5 +14,8 @@
     "tdd"
   ],
   "author": "Jesus Uriel Robles Vargas",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  }
 }
