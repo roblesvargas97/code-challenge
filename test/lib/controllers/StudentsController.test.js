@@ -16,9 +16,18 @@ describe("Test for StudentController getStudents", () => {
 
 describe("Test for StudentController getEmailsStudentsWithCertification", () => {
 
-    test("1) getEmailsStudentsWithCertification should return somethin ", () => {
+    test("1) getEmailsStudentsWithCertification should return something ", () => {
         const emailsStudents = StudentsController.getEmailsStudentsWithCertification();
         expect(emailsStudents.length).not.toEqual(0);
+    });
+
+});
+
+describe("Test for StudentController getStudentsByCreditsGreater500 ", () => {
+
+    test("1) getStudentsByCreditsGreater500 should return something ", () => {
+        const studentsByCredits = StudentsController.getStudentsByCreditsGreater500();
+        expect(studentsByCredits.length).not.toEqual(0);
     });
 
 });
