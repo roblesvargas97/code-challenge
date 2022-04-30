@@ -7,6 +7,11 @@ describe("Test for StudentController", () => {
         expect(students.length).not.toEqual(0);
     });
 
+    test("2)getStudents shouldnt return The file does not exists ", ()=>{
+        const students = StudentController.getStudents();
+        expect(students).not.toBe("The file does not exists.");
+    });
+
 
 
 });
