@@ -1,6 +1,6 @@
 const StudentsController = require("../../../lib/controllers/StudentsController");
 
-describe("Test for StudentController", () => {
+describe("Test for StudentController getStudents", () => {
 
     test("1) getStudent should Return something ", () => {
         const students = StudentsController.getStudents();
@@ -12,6 +12,13 @@ describe("Test for StudentController", () => {
         expect(students).not.toBe("The file does not exists.");
     });
 
+});
 
+describe("Test for StudentController getEmailsStudentsWithCertification", () => {
+
+    test("1) getEmailsStudentsWithCertification should return somethin ", () => {
+        const emailsStudents = StudentsController.getEmailsStudentsWithCertification();
+        expect(emailsStudents.length).not.toEqual(0);
+    });
 
 });
