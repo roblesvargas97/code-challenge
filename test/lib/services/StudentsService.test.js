@@ -44,3 +44,23 @@ describe("Test for StudentsService getEmailsStudentsWithCertification", () => {
 
     });
 });
+
+describe(" Test for StudentsService getStudentsByCoinsGreater500", () => {
+
+    test("1) getStudentsByCreditsGreater500.lenght should be greater than 0", () => {
+
+        const students = Reader.readFile(process.cwd()+"/test/data/visualPartnershipStudents.json");
+        const studentsCreditsGreater500 = StudentsServices.getStudentsByCreditsGreater500(students);
+        expect(studentsCreditsGreater500.length).not.toBe(0);
+
+    });
+
+    test("2) getStudentsByCreditsGreater500 returned array every student need to have coins greater 500", () => {
+
+        const students = Reader.readFile(process.cwd()+"/test/data/visualPartnershipStudents.json");
+        const studentsCreditsGreater500 = StudentsServices.getStudentsByCreditsGreater500(students);
+        studentsCreditsGreater500.forEach(student => expect(student.credits).toBeGreaterThan(500));
+
+    });
+
+});
