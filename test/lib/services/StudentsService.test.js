@@ -23,3 +23,24 @@ describe("Test for StudentsServices getStudents", () => {
     });
 
 });
+
+describe("Test for StudentsService getEmailsStudentsWithCertification", () => {
+
+    test("1) getEmailsStudentsWithCertification.lenght should be greater than 0", () => {
+
+        const students = Reader.readFile(process.cwd()+"/test/data/visualPartnershipStudents.json");
+        const emailsStudents = StudentsServices.getEmailsStudentsWithCertification(students);
+        expect(emailsStudents.length).not.toBe(0);
+
+    });
+
+    test("2) getEmailsStudentsWithCertification returned array every student need to have certification", () => {
+
+        const students = Reader.readFile(process.cwd()+"/test/data/visualPartnershipStudents.json");
+        const filterStudentsByEmail = students.filter(student => student.haveCertification === true);
+        filterStudentsByEmail.forEach(student => expect(student.haveCertification).toBeTruthy());
+        const emailsStudents = StudentsServices.getEmailsStudentsWithCertification(students);
+        expect(filterStudentsByEmail.length).toBe(emailsStudents.length);
+
+    });
+});
