@@ -14,6 +14,8 @@
  - `eslint`: Permite darle formato a nuestro codigo.
 
  - `jest`: Nos brinda un entorno para hacer pruebas unitarias.
+
+ - `express`: Framework de javascript enfocado al backend.
   
 ## Diseño de componentes
 
