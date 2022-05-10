@@ -16,6 +16,16 @@
  - `jest`: Nos brinda un entorno para hacer pruebas unitarias.
 
  - `express`: Framework de javascript enfocado al backend.
+ 
+## Comandos
+
+- `test`: Nos permite ejecutar las pruebas unitarias con la dependencia de jest.
+ 
+- `test-w`: Nos permite ejecutar las pruebas unitarias sin salirnos del entorno de pruebas de jest.
+ 
+- `linter`: Nos permite detectar las insconsitencias del formato de codigo con eslint.
+
+- `linter-fix`: Nos permite reparar las inconsitencias del formato del codigo con eslint.
   
 ## Diseño de componentes
 
@@ -301,4 +311,6 @@ flowchart TB
     api --> get-all-emails-students-with-certifications
     api --> get-all-students-with-credits-greater-500
 ```
+## Autor 
+[roblesvargas97](https://github.com/roblesvargas97)
 
